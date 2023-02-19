@@ -22,19 +22,19 @@ async function getTemperatureData (locationObject) {
     const weatherstackResponse = await axios.get(weatherStackApiCall)
     showDecoratedData(locationObject, weatherstackResponse)
   } catch (error) {
-    console.log(`error occured in function getTemperatureData \n ${error}`)
+    console.log(`error occured in function getTemperatureData \n${error}`)
   }
 }
 
-async function getCoordinatesOfLocation (location) {
+async function getTemptDataByLocation (location) {
   try {
     const positionStackApiCall = `http://api.positionstack.com/v1/forward?access_key=${POSITIONSTACK_API_KEY}&query=${location}`
     const response = await axios.get(positionStackApiCall)
     const listOfMatchingLocationsFound = response.data.data
     listOfMatchingLocationsFound.forEach(loc => getTemperatureData(loc))
   } catch (error) {
-    console.log(`error occured in function getCoordinatesOfLocation \n${error}`)
+    console.log(`error occured in function getTemptDataByLocation \n${error}`)
   }
 }
 
-getCoordinatesOfLocation('lumou')
+getTemptDataByLocation('lumou')
