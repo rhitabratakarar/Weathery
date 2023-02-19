@@ -37,7 +37,7 @@ A simple weather app made using NodeJS.
 
 # Setup API Keys:
 
-The setup is required for the below mentioned websites.
+The setup is required for the below mentioned websites. For saving the API Keys, a `.env` file is required. So creating that file inside the project directory is recommended.
 
 ## weatherstack.com
 
@@ -45,9 +45,7 @@ The setup is required for the below mentioned websites.
    
 2. Signup or Login into the weatherstack website and get an API Key from the dashboard.
 
-3. Create a `.env` file inside the project repository.
-
-4. Open the `.env` file and paste the key in the following format:
+3. Open the `.env` file and paste the key in the following format:
 
         WEATHERSTACK_API_KEY=<Your Api Key goes here>
 
@@ -56,7 +54,7 @@ The setup is required for the below mentioned websites.
     
     **Note**: *The API_KEY is just an example. Get your own API KEY. This won't work.*
 
-5. Save the file and close.
+4. Save the file and close.
 
 ## positionstack.com
 
@@ -64,9 +62,7 @@ The setup is required for the below mentioned websites.
    
 2. Signup or Login into the positionstack website and get an API Key from the dashboard.
 
-3. Create a `.env` file inside the project repository.
-
-4. Open the `.env` file and paste the key in the following format:
+3. Open the `.env` file and paste the key in the following format:
 
         POSITIONSTACK_API_KEY=<Your Api Key goes here>
 
@@ -75,7 +71,7 @@ The setup is required for the below mentioned websites.
     
     **Note**: *The API_KEY is just an example. Get your own API KEY. This won't work.*
 
-5. Save the file and close.
+4. Save the file and close.
 
 # Usage
 
