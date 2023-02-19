@@ -37,6 +37,8 @@ A simple weather app made using NodeJS.
 
 # Setup API Keys:
 
+The setup is required for the below mentioned websites.
+
 ## weatherstack.com
 
 1. For this project, [WeatherStack.com](https://weatherstack.com) has been used.
