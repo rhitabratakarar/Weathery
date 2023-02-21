@@ -37,4 +37,4 @@ async function getTemptDataByLocation (location) {
   }
 }
 
-getTemptDataByLocation('lumou')
+getTemptDataByLocation(process.argv[2])
